@@ -56,6 +56,7 @@ public class PhoneBookManager {
             // actual.getKey() + ": "
             // + actual.getValue().getPhoneNumber());
         }
+    }
 
     private void addContact() {
         // TODO olvasd be egy változóba a kontakt nevét
@@ -104,5 +105,5 @@ public class PhoneBookManager {
     }
 
 
-    }
+
 }
