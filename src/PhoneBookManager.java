@@ -40,7 +40,7 @@ public class PhoneBookManager {
         //  1. Add contact
         System.out.println("1. Add contact");
         //  2. Search contact
-        System.out.println(" 2. Search contact");
+        System.out.println("2. Search contact");
         //  3. Remove contact
         System.out.println("3. Remove contact");
         //  4. Exit
@@ -60,10 +60,10 @@ public class PhoneBookManager {
 
     private void addContact() {
         // TODO olvasd be egy változóba a kontakt nevét
-        System.out.println("Add meg az új kontakt nevét");
+        System.out.println("Give a new contact name: ");
         String name = scanner.nextLine();
         // TODO olvasd be egy változóba a kontakt telefonszámát
-        System.out.println("Add meg az új kontakt telefonszámát");
+        System.out.println("The new contact phone number: ");
         String phoneNumber = scanner.nextLine();
         // TODO példányosíts ezekből az adatokból egy Contact-ot
         Contact contact = new Contact(name, phoneNumber);
@@ -78,7 +78,7 @@ public class PhoneBookManager {
         //  ha nem találod meg az adott kontaktot, jelezd
         //  azt is a felhasználónak!
 
-        System.out.println("Give the contact name");
+        System.out.println("Search for the contact name: ");
         String name = scanner.nextLine();
         Contact contact = phoneBook.getOrDefault(name, new Contact("Nincs", "000"));
         System.out.println(contact);
